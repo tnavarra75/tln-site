@@ -1,0 +1,20 @@
+// bower:scss
+// endbower
+
+/* general */
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'typography';
+@import 'layout';
+
+/* specific */
+@import 'header';
+@import 'intro';
+@import 'skills';
+@import 'work';
+@import 'myStory';
+@import 'contact';
+@import 'projectPage';
+@import 'footer';
+

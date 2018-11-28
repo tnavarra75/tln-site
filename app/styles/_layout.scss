@@ -1,0 +1,136 @@
+// Layout
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+// * {
+//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+//   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+// }
+
+img,
+iframe {
+  vertical-align: middle;
+  border: none;
+}
+
+img, svg {
+  width: 100%;
+}
+
+// Wrap stuff sometimes
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  @include clearfix();
+  
+  @media screen and (min-width: $large) {
+    width: 80%;
+    margin: 0 5% 0 15%;
+  }
+
+  @media screen and (min-width: $xlarge) {
+    margin: 0 auto;
+  }
+}
+
+.strikethrough-container {
+  margin-bottom: 30px;
+}
+
+section {
+  padding: 30px 0;
+  @media screen and (min-width: $medium) {
+    padding: 50px 0;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* OWL */
+.owl-carousel {
+  position: relative;
+}
+
+.owl-carousel .owl-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+.owl-stage {
+  margin: 0 auto;
+  
+  .owl-item:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.owl-theme {
+  .owl-dots {
+    .owl-dot {
+      span {
+        width: 6px;
+        height: 6px;
+        background: rgba($blue-gray, .6);
+        
+        @media screen and (min-width: $medium) {
+          width: 8px;
+          height: 8px;
+        }
+      }
+      .active {
+        background: $blue-gray;
+      }
+    }
+  }
+
+  .owl-nav {
+    .owl-prev, .owl-next {
+      color: rgba($blue-gray, .5);
+      background: none;
+      @include fontSize(26);
+    }
+    .owl-prev:hover, .owl-next:hover {
+      color: $blue-gray;
+      background: none;
+    }
+  }
+
+}
+
+.re-center {
+  transform: translateX(10px);
+}
+
+.gray-border {
+  border: 1px solid $blue-gray;
+}
+
+// Hide stuff sometimes
+@media screen and (max-width: $medium - 1) {
+  .hidden-mobile  { display: none !important; }
+}
+@media screen and (min-width: $medium) {
+  .hidden-desktop { display: none !important; }
+}

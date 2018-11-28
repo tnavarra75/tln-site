@@ -1,0 +1,292 @@
+//PROJECT OVERVIEW ///////////////////////////////////////////////
+.project-overview {
+  margin-top: 50px;
+  padding: 30px 0;
+  
+  @media screen and(min-width: $medium) {
+    padding: 50px 0;
+  }
+  
+  .project-headline {
+    padding-bottom: 10px;
+    
+    @media screen and (min-width: $medium) {
+      padding-bottom: 20px;
+    }
+  }
+  
+  .project-stats-desc-container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $large) {
+      display: flex;
+      width: 80%;
+      margin: 0 5% 0 15%;;
+    }
+
+    @media screen and (min-width: $xlarge) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .project-stats {
+      padding-bottom: 15px;
+      
+      @media screen and(min-width:$medium) {
+        padding-bottom: 20px;
+      }
+      
+      
+      @media screen and (min-width: $large) {
+        flex: 0 0 auto;
+        padding-bottom: 0;
+        margin: 0 5% 0 0;
+      }
+      
+      .stats-rule {
+        width: 100px;
+        height: 1px;
+        background-color: $blue-green;
+        margin: 8px 0 6px;
+        
+        @media screen and(min-width: $medium) {
+          margin: 12px 0 10px;
+        }
+      }
+    }
+
+    .project-description {
+      display: inline-block;
+      width: 100%;
+      
+      @media screen and (min-width: $large) {
+        flex: 1 1 auto;
+      }
+    }//end project description
+  }//end project-stats-desc-container
+  
+} //end project-overview
+
+.owl-carousel {
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.project-assets {
+  padding: 0;
+  margin-bottom: 50px;
+  
+  @media screen and (min-width: $medium) {
+    margin: 0 0 100px 0;
+  }
+
+  @media screen and (min-width: $large) {
+     margin: 0 0 200px 0;
+  }
+  
+  .container {
+    .desktop, .mobile, .desktop-alt, .mobile-alt {
+      border: 1px solid #ccc;
+    }
+
+    .desktop {
+      width: 91.66666666666666%;
+      margin-bottom: 5%;
+    }
+
+    .mobile {
+      position: absolute;
+      right: 2px;
+      bottom: 0;
+      width: 21%;
+    }
+
+    .desktop-alt {
+      width: 75%;
+      float: left;
+    }
+
+    .mobile-alt {
+      width: 20%;
+      float: right;
+    }
+
+    .project-assets-grouping {
+      @include clearfix();;
+      margin-bottom: 30px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      
+      @media screen and (min-width: $medium) {
+        margin-bottom: 80px;
+      }
+    }
+
+    .project-asset-container {
+      @include clearfix();
+      padding-bottom: 50px;
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+      .candle-gifs {
+        position: relative;
+      }
+
+      @media screen and (min-width: $medium) {
+        padding-bottom: 100px;
+      }
+      
+      .project-asset {
+        width: 100%;
+        .candle-gif-left, .candle-gif-right {
+          position: absolute;
+          width: 13.617021276595745%;
+          top: 17.57188498402556%;
+        }
+
+        .candle-gif-left {
+          left: 24.25531914893617%;
+        }
+
+        .candle-gif-right {
+          left: 82.34042553191489%;
+        }
+
+        &.dove-left {
+          width: 50%;
+        }
+
+        @media screen and (min-width: $medium) {
+          width: 47.5%;
+          &.dove-left {
+            width: 20%;
+          }
+
+          &.dove-right {
+            width: 75%;
+          }
+
+          &.background-left {
+            width: 43%;
+          }
+
+          &.background-right {
+            width: 52%;
+          }
+
+          float: left;
+          &:last-of-type {
+            float: right;
+          }
+        }
+      }  
+    }
+
+    &.alex-bday {
+      img {
+        margin-bottom: 50px;
+      }
+    }
+
+    &.harley-dynamic {
+        .project-asset-container {
+        padding-bottom: 50px;
+      }
+    }
+
+    &.harley-freeer-vdx {
+      max-width: 970px;
+    }
+
+    &.alex-bday {
+      max-width: 828px;
+    }
+
+    &.wedding-invite {
+
+      .invite-top {
+        @include clearfix();
+        margin: 0 5% 8%;
+
+        img:first-of-type {
+          width: 35%;
+        }
+        img:last-of-type {
+          width: 51%;
+        }
+      }
+
+      .invite-bottom {
+        .invite-open {
+          // display: block;
+          width: 77%;
+          margin: 0 17% 8%;
+        }
+        .wedding-cards-container {
+          width: 70%;
+          margin: 0 auto;
+          .wedding-cards {
+            margin: 0 4%;
+            width: 41%;
+          }
+        }
+      }
+
+      @media screen and (min-width: $medium) {
+        .invite-top {
+          width: 80%; //1000px at 1200px container
+          margin: 0 auto 50px;
+        }
+        .invite-bottom {
+          .invite-open {
+            width: 69.83333333333334%;
+            float: left;
+            margin: 0;
+          }
+          .wedding-cards-container {
+            float: right;
+            width: 28.749999999999996%; //at 348px 1200px container
+            .wedding-cards {
+              display: block;
+              margin: 10px 0 50px 0;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }//end container
+}//end project assets
+
+
+
+// MORE WORK ///////////////////////////////////////
+.more-work {
+  width: 100%;
+  margin-bottom: 0;
+  // background-color: rgba($blue-gray, .08);
+  padding: 30px 0 20px;
+}
+
+#owl-carousel-more-work {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.standard-banner {
+  text-align: right;
+  width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+
+
+
+

@@ -1,0 +1,32 @@
+// Footer
+
+footer {
+  @include clearfix();
+  color: rgba($blue-gray-text, .6);
+  background-color: $dark-blue-gray;
+  border-top: 2px solid $blue-gray;
+  text-align: left;
+  padding: 20px 5%;
+  
+  @media screen and (min-width: $medium) {
+    padding: 40px 20px 40px;
+    
+    .social-icons-container {
+      float: right;
+    }
+
+    .footer-content {
+      position: relative;
+      float: left;
+      padding: 26px 0 0 28px;
+    }
+
+    .chameleon-footer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      opacity: .3;
+    }
+  }
+}

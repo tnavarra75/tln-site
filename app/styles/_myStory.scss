@@ -1,0 +1,21 @@
+section.my-story {
+  img {
+    display: none;
+    
+    @media screen and (min-width: $medium) {
+      float: right;
+      display: inline;
+      border-radius: 50%;
+      margin: 0 0 10px 5%;
+      width: 30%;
+    }
+
+    @media screen and (min-width: $medium-2) {
+      width: 25%;
+    }
+
+    @media screen and (min-width: $large) {
+      width: 20%;
+    }
+  }
+} //end my story

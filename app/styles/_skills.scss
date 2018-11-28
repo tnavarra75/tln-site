@@ -1,0 +1,97 @@
+section.skills {
+  .skills-list-container {
+    .skills-list-visual {
+      padding-bottom: 30px;
+    }
+
+    .skills-level {
+      position: relative;
+      top: -4px;
+      display: inline-block;
+      width: 120px;
+      height: 1px;
+      background-color: $blue-green;
+      margin-left: 10px;
+      
+      &::before {
+        position: absolute;
+        top: -5px;
+        right: 108px;
+        content: '';
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #FFF;
+        border: 2px solid $blue-gray;
+        transition: 1s ease-out;
+      } 
+
+      &.active::before {
+        transition: 1s ease-out;
+      }
+
+      &.illustrator.active::before {
+        right: 20px;
+      }
+
+      &.indesign.active::before {
+        right: 0px;
+      }
+
+      &.photoshop.active::before {
+        right: 0;
+      }
+
+      &.keynote.active::before {
+        right: 85px;
+      }
+
+      &.powerpoint.active::before {
+        right: 70px;
+      }
+
+      &.word.active::before {
+        right: 70px;
+      }
+
+      &.html.active::before {
+        right: 50px;
+      }
+
+      &.css.active::before {
+        right: 45px;
+      }
+
+      &.javascript.active::before {
+        right: 80px;
+        
+      }
+
+      &.email.active::before {
+        right: 60px;
+      }
+
+      &.greensock.active::before {
+        right: 70px;
+      }
+
+
+    }
+
+    @media screen and (min-width: $medium) {
+      @include clearfix();
+      margin: 0 auto;
+      width: 690px;
+      
+      .skills-list {
+        float: left;
+      }
+      .skills-list:nth-of-type(2) {
+        float: right;
+      }
+      .skills-list-visual {
+        padding-bottom: 0;
+      }
+    }//end media query
+  }//end container
+} //end skills section

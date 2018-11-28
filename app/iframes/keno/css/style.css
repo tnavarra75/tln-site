@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Asap', Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  margin: 0;
+  padding: 6px 0 0;
+  width: 300px;
+  height: 250px;
+  background-color: #F15A22;
+  text-align: center;
+}
+
+.headline {
+  position: absolute;
+  top: 148px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 1px;  
+}
+
+.yellow {
+  color: #FFD12F;
+}
+
+.button {
+  position: relative;
+  top: 3px;
+  color: #F15A22;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: bold;
+  padding: 2px 8px;
+  background-color: #fff;
+  visibility: hidden;
+}
+
+.legal {
+  visibility: hidden;
+  position: absolute;
+  bottom: 4px;
+  font-family: arial;
+  font-size: 8px;
+  width: 100%;
+}
+
+svg {
+  overflow: visible;
+}
+
+#nce-lottery-logo {
+  visibility: hidden;
+  position: absolute;
+  left: calc(50% - 63px/2);
+  top: 193px;
+  width: 63px;
+  height: 38px;
+}
+
+#carolina-keno-logo {
+  width: 150px;
+  height: 150px;
+}
+
+#rays {
+  position: absolute;
+  top: -165px;
+  left: calc(50% - 250px);
+  width: 500px;
+  height: 500px;
+}

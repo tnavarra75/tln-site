@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'kapra';
+    src: url('../font/kapra-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'darwin-bold';
+    src: url('../font/darwin-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+canvas {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -o-crisp-edges;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 250px;
+}
+
+.corner {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+#top-left {
+  border-left: 5px solid #71c5e8;
+  border-top: 5px solid #71c5e8;
+}
+
+#top-right {
+  border-right: 5px solid #3cb0e0;
+  border-top: 5px solid #3cb0e0;
+}
+
+#bottom-left {
+  border-left: 5px solid #4859a3;
+  border-bottom: 5px solid #4859a3;
+}
+
+#bottom-right {
+  border-right: 5px solid #1d1e53;
+  border-bottom: 5px solid #1d1e53;
+}
+
+.blue-background {
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #3cb0e0;
+  width: calc(300px - 20px);
+  height: calc(250px - 20px);
+  top: 10px;
+  left: 10px;
+}
+
+.white-border {
+  box-sizing: border-box;
+  position: absolute;
+  width: calc(300px - 10px);
+  height: calc(250px - 10px);
+  top: 5px;
+  left: 5px;
+  border: 5px solid #fff;
+}
+
+h1 {
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  font-family: 'kapra';
+  font-weight: normal;
+  font-size: 32px;
+  letter-spacing: 10px;
+  line-height: 60px;
+  text-align: center;
+  top: 34px;
+  text-shadow: 1px 1px 0px black;
+}
+
+#headline1 {
+  top: 95px;
+}
+
+#headline4 {
+  top: 35px;
+  font-size: 28px;
+  letter-spacing: 6px;
+  line-height: 28px;
+  text-shadow: none;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 138px;
+  height: 34px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.button {
+  box-sizing: border-box;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  font-family: 'darwin-bold';
+  font-weight: normal;
+  padding: 8px;
+  height: 34px;
+  border: 2.75px solid #fff;
+}
+
+.voom-logo {
+  position: absolute;
+  top: 82px;
+  width: 240px;
+  left: 28px;
+}
+
+.voom-logo svg {
+  width: 100%;
+}
+
+#no-jumper, #skyjumper-silo1, #skyjumper-silo2, #skyjumper-silo3, #wave1, #wave2, #wave3, .tagline-letter, .button, .logo, #headline2, #headline3, #headline4, .blue-background, .voom-logo, .white-border, .corner {
+  visibility: hidden;
+}
+
+#no-jumper {
+  z-index: -50;
+}
+
+#skyjumper-silo1, #skyjumper-silo2, #skyjumper-silo3, #no-jumper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#skyjumper {
+  position: absolute;
+  top: 19px;
+  left: 95px;
+}

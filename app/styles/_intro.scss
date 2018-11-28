@@ -1,0 +1,67 @@
+section.intro {
+  position: relative;
+  background-color: $dark-blue-gray;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+
+  .container {
+    position: relative;
+    height: 100%;
+    text-align: left;
+    
+    .introText {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-40%);
+      
+      .hand-writing-container {
+        width: 100%;
+        margin-bottom: 20px;
+        
+        @media screen and (min-width: $medium) {
+          width: 90%;
+        }
+      }
+
+      .imTerri {
+        width: 80.34%;
+        transform: translateY(10%);
+        padding-left: 1.8%;
+      }
+
+      .hi {
+        width: 17%;
+      }
+
+      .imTerri, .hi {
+        display: inline-block;
+      }
+    }
+  }
+  
+  .chameleon {
+    position: absolute;
+    right: 0;
+    bottom: 1%;
+    width: 75%;
+        
+    @media screen and (min-width: $medium) {
+      bottom: 5%;
+      width: 50%;
+    }
+    
+    @media screen and (min-width: $large) {
+      bottom: 8%;
+      width: 33%;
+      min-width: 400px;
+      max-width: 500px;
+    }
+  }
+
+  @media screen and (min-width: $medium) {
+    .introText {
+      width: 590px;
+    }
+  }
+}

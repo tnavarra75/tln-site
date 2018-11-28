@@ -1,0 +1,30 @@
+// _video.scss
+
+.video-container {
+  background-color: white;
+  overflow: hidden;
+  
+  video {
+    width: 100%;
+    max-width: 1280px;
+    max-height: 720px;
+    vertical-align: middle;
+  }
+}
+
+
+// responsive
+@media screen and (min-width: $tiny) {}
+@media screen and (min-width: $small) {}
+@media screen and (min-width: $medium) {
+
+  .video-container {
+    width: 60.952380952380956%;
+    float: left;
+  }
+
+//END MEDIUM
+}
+@media screen and (min-width: $large) {}
+@media screen and (min-width: $xlarge) {}
+@media screen and (min-width: $enormous) {}

@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'JB Futura Std Book';
+  src: url('../font/JBFuturaStd-Book.woff2') format('woff2'),
+      url('../font/JBFuturaStd-Book.woff') format('woff'),
+      url('../font/JBFuturaStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'JB Futura Std Book', Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 6px 0 0;
+  width: 300px;
+  height: 250px;
+  background-color: #FFF;
+  text-align: left;
+}
+
+.scene {
+  margin-top: 41px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cta-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF;
+  height: 50px;
+  padding: 10px;
+}
+
+.headline {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: #5bb5e4;
+  font-family: 'JB Futura Std Book';
+  font-size: 22.5px;
+  font-weight: normal;
+  letter-spacing: .01em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#headline1a, #headline1b, #headline2 {
+  visibility: hidden;
+}
+
+#headline1a, #headline1b {
+  font-size: 19.5px;
+}
+
+
+.logo, .reno-logo {
+  display: inline-block;
+  width: 68px;
+}
+
+.logo {
+  transform: translateY(5px);
+}
+
+.reno-logo {
+  transform: translateY(3px);
+}
+
+.button {
+  display: inline-block;
+  color: #FFF;
+  background-color: #eb7325;
+  border-radius: 10px;
+  font-family: 'JB Futura Std Book';
+  font-size: 13px;
+  letter-spacing: .01em;
+  line-height: 1;
+  height: 22px;
+  padding: 5px 20px 0;
+  transform: translateY(4px);
+}
+
+svg {
+  width: 100%;
+  overflow: hidden;
+}
+
+#buildings, #trees-hill, #plane {
+  visibility: hidden;
+}
