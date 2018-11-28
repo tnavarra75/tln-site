@@ -1,22 +1,19 @@
 # Project Name
-**Site**: [http://www.url.com](http://www.url.com)  
+**Site**: [http://www.terriloomer.com](http://www.terriloomer.com)  
 **Username**: `username`  
 **Password**: `password` 
 
 Project description...
   
 ## Team 
-**Producers**:
-
-* [Alanna Whelan](mailto:alanna.whelan@mullenlowe.com)  
 
 **Developers**:
 
-* [Terri Navarra](mailto:terri.navarra@mullenlowe.com)  
+* [Terri Navarra 
   
 ## Hosting
-**Provider**: AWS  
-**Deployment**: Staging and master branches should be connected to their related branches
+**Provider**: A2  
+**Deployment**: 
 
 ## Development Environment
 Description of the development environment, link to the vagrant box and any special instructions for setting up the site locally.
