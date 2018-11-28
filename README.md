@@ -9,7 +9,7 @@ Project description...
 
 **Developers**:
 
-* [Terri Navarra 
+* Terri Navarra
   
 ## Hosting
 **Provider**: A2  
